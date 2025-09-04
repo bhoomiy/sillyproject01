@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="r.css">
+  <title>Register</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Pink Navbar */
+    .navbar-custom {
+      background-color: #fcdada;  /* soft pink */
+      min-height: 110px;          /* taller navbar */
+    }
+
+    /* Remove Bootstrap default spacing */
+    .navbar {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    /* Title in center */
+    .navbar-title {
+      font-size: 32px;
+      font-weight: bold;
+      display: block;
+    }
+
+    /* Buttons */
+    .btn-custom {
+      background: #e63973;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      padding: 8px 20px;
+    }
+    .btn-custom:hover {
+      background: #c62860;
+      color: #fff;
+    }
+
+    /* Left Logo */
+    .navbar-logo img {
+      height: 90px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* Right images */
+    .navbar-images img {
+      height: 90px;
+      width: auto;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .navbar-images {
+        display: none; /* hide right-side images on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom shadow sticky-top">
+  <div class="container-fluid align-items-center justify-content-between">
+   
+   <!-- Left Logo -->
+<a class="navbar-logo d-flex align-items-center ms-5 me-4" href="#">
+  <img src="logo.jpg" 
+       alt="Logo"
+       style="height:110px; border-radius:10px; border:1px solid #c62860; object-fit:contain;" />
+</a>
+
+
+
+    <!-- Title in middle -->
+    <div class="text-center flex-grow-1">
+      <span class="navbar-title">HTML for Curious Cats</span>
+      <div class="mt-2">
+        <a href="index.html"  class="btn btn-custom mx-2">Home</a>
+        <a href="aboutme.html" target="_blank" class="btn btn-custom mx-2">About Me</a>
+      </div>
+    </div>
+
+    <!-- Right images -->
+    <div class="navbar-images d-flex align-items-center gap-2 ms-3">
+      <img src="1r.jpg" alt="Right Image 1">
+      <img src="2r.jpg" alt="Right Image 2">
+    </div>
+
+  </div>
+</nav>
+
+<!-- Main content -->
+<main class="container-fluid mt-0 pt-0">
+  <!-- Your sidebar + content here -->
+</main>
+<div class="container">
+    <div class="register-container">
+      <div class="register-heading">
+        <h2>Register</h2>
+      </div>
+      <form>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter your password">
+        </div>
+        <button type="submit" class="btn-register">Register</button>
+      </form>
+    </div>
+  </div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

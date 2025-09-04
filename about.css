@@ -1,0 +1,28 @@
+/* Main content cute style */
+.main-box {
+  background-color: #fff0f6;   /* very soft pink background */
+  border: 2px solid #f8c6d8;   /* pastel border */
+  border-radius: 20px;         /* rounded corners */
+  padding: 40px;
+  max-width: 600px;
+  margin: 80px auto;           /* center block with spacing from navbar */
+  text-align: center;          /* center text */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);  /* soft shadow */
+  font-family: "Comic Sans MS", "Poppins", sans-serif;
+  color: #d6336c;              /* cute pink text */
+}
+
+/* Make paragraphs prettier */
+.main-box p {
+  font-size: 18px; 
+  margin-bottom: 12px;
+}
+
+/* Add a little hover effect */
+.main-box:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+body{
+    background-color:yellow;
+}
